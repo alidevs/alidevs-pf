@@ -4,7 +4,7 @@ use yew::prelude::*;
 #[function_component]
 pub fn Oct() -> Html {
     let now = Local::now();
-    let oct = Local.with_ymd_and_hms(2024, 10, 1, 0, 0, 0).unwrap();
+    let oct = Local.with_ymd_and_hms(2024, 10, 12, 0, 0, 0).unwrap();
     let days_left = oct.signed_duration_since(now).num_days();
 
     html! {
